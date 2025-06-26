@@ -19,7 +19,6 @@
           </div>
         </div>
       </header>
-
       <!-- Main Content -->
       <main class="container mx-auto px-4 py-8">
         <div class="max-w-6xl mx-auto space-y-8">
