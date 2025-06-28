@@ -15,6 +15,7 @@
               :icon="isDarkMode ? 'pi pi-sun' : 'pi pi-moon'"
               class="p-button-rounded p-button-text text-white hover:bg-white/20"
               aria-label="Toggle dark mode"
+              style=""
             />
           </div>
         </div>
@@ -35,7 +36,7 @@
           </div>
 
           <!-- Results Display -->
-          <div class="animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="animate__animated animate__fadeInUp animate__delay-4s">
             <ResultDisplay
               v-if="selectedCountry1 && selectedCountry2"
               :country1="selectedCountry1"
@@ -46,7 +47,7 @@
           </div>
 
           <!-- Map Display -->
-          <div class="animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="animate__animated animate__fadeInUp animate__delay-5s">
             <MapDisplay
               v-if="selectedCountry1 && selectedCountry2"
               :country1="selectedCountry1"
@@ -59,7 +60,7 @@
 
       <!-- Footer -->
       <footer
-        class="bg-white/10 dark:bg-gray-900/10 backdrop-blur-md border-t border-white/20 mt-16"
+        class="bg-white/10 dark:bg-gray-900/10 backdrop-blur-md border-t border-white/20 mt-1"
       >
         <div class="container mx-auto px-4 py-6 text-center text-white/80">
           <p>&copy; 2025 Time Difference Calculator. Built with Vue 3 & Leaflet.</p>

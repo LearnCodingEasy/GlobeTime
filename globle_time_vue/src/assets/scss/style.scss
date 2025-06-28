@@ -50,7 +50,6 @@ body {
   background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
 }
 
-
 /* For Scrollbar */
 ::-webkit-scrollbar {
   width: 0.01rem;
@@ -59,4 +58,29 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #bbbbbb;
   border-radius: 0.25rem;
+}
+
+header {
+  .container {
+    .flex {
+      button {
+        &:hover {
+          span {
+            color: #000;
+          }
+        }
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+main {
+  div.max-w-6xl {
+    > div.animate__animated {
+      padding: 0.2rem;
+    }
+  }
 }
